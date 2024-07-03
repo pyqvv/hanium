@@ -1,0 +1,62 @@
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    z-index: 1;
+    color: #000;
+}
+
+.nav-logo {
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px; /* 반응형 조정이 필요할 수 있음 */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-home,
+.nav-reservation,
+.nav-myPage {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-home:hover,
+.nav-reservation:hover,
+.nav-myPage:hover {
+    color: #007BFF; /* 호버 시 색상 변경 */
+}
+
+.nav-login {
+    border-radius: 25px;
+    padding: 8px 20px;
+    background: #007BFF; /* 버튼 색상 */
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        padding: 10px 20px;
+    }
+
+    .nav-logo {
+        font-size: 24px;
+    }
+
+    .nav-menu {
+        gap: 20px;
+        font-size: 12px;
+    }
+}
