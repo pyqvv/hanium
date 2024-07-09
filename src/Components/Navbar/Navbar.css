@@ -8,9 +8,6 @@
     align-items: center;
     padding: 20px 2rem;
     z-index: 1000;
-    color: #000;
-    background-color: #fff;
-    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
   }
   
   .nav-logo {

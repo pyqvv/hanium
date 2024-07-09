@@ -6,7 +6,7 @@ const DoctorSignUp = () => {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate('/backToLogin');
+        navigate('/login');
     }
 
   return (

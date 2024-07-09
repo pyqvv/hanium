@@ -1,16 +1,5 @@
-/* Reset and base styling */
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-}
-
-body, html {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Container styling */
@@ -30,10 +19,10 @@ body, html {
   margin-bottom: 30px;
   text-align: center;
 }
+
 .text {
   font-size: 32px;
   font-weight: 700;
-  color: #333;
 }
 
 /* Input fields styling */
@@ -43,27 +32,25 @@ body, html {
   gap: 20px;
   width: 100%;
 }
+
 .input {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
+
 .field_name {
   font-size: 14px;
   font-weight: bold;
   color: #777;
 }
-.input input {
+
+.input input, select {
   padding: 12px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 8px;
   width: 100%;
-  transition: border-color 0.3s, box-shadow 0.3s; /* 애니메이션 추가 */
-}
-.input input:focus {
-  border-color: #007bff; /* 포커스 시 색상 변경 */
-  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2); /* 포커스 시 그림자 */
 }
 
 /* Submit button styling */
@@ -73,51 +60,50 @@ body, html {
   gap: 20px;
   margin-top: 30px;
 }
+
 .submit {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 120px; /* 너비 조정 */
-  height: 45px; /* 높이 조정 */
+  width: 120px;
+  height: 45px;
   color: #fff;
-  background: linear-gradient(135deg, #007bff, #0056b3); /* 그라데이션 배경 */
-  border-radius: 22.5px; /* 원형 모양 */
+  background: #007bff;
+  border-radius: 22.5px;
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
   transition: background 0.3s, transform 0.3s; /* 애니메이션 추가 */
 }
+
 .submit:hover {
   background: linear-gradient(135deg, #0056b3, #007bff); /* 호버 시 색상 반전 */
   transform: translateY(-3px); /* 호버 시 살짝 위로 */
 }
 
-/* Sign up buttons styling */
 .signUp {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
   width: 100%;
 }
+
 .doctor-signUp, .patient-signUp {
   padding: 10px;
-  font-size: 12px; /* 텍스트 크기 줄이기 */
-  color: #777; /* 기본 회색 */
+  font-size: 11px;
+  color: #777;
   text-align: center;
   cursor: pointer;
   transition: color 0.3s; /* 애니메이션 추가 */
 }
+
 .doctor-signUp:hover, .patient-signUp:hover {
   color: #0056b3; /* 호버 시 파란색 */
-}
-.doctor-signUp:focus, .patient-signUp:focus {
-  outline: none; /* 포커스 시 외곽선 제거 */
-  color: #007bff; /* 포커스 시 파란색 */
 }
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
-  .container {
+  .login-container {
       padding: 20px;
       max-width: 90%;
   }

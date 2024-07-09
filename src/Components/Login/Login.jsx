@@ -20,6 +20,15 @@ const Login = () => {
         </div>
         <div className='inputs'>
             <div className="input">
+                <div className='field_name'>분류</div>
+                <form>
+                    <select>
+                        <option selected>환자</option>
+                        <option>의사</option>
+                    </select>
+                </form>
+            </div>
+            <div className="input">
                 <div className='field_name'>이메일</div>
                 <input type="email" placeholder='Email Id'/>
             </div>
