@@ -1,6 +1,6 @@
 import React from 'react'
 import DoctorList from '../DoctorList/DoctorList'
-import { Calendar } from '../Calendar/Calendar'
+import Diary from '../Diary/Diary'
 import './Reservation.css'
 import Appointment from '../Appointment/Appointment'
 
@@ -8,11 +8,11 @@ const Reservation = () => {
   return (
     <div className="reservation-container">
       <div className='res'>
-      <DoctorList />
-      <Appointment/>
+        <DoctorList />
+        <Appointment/>
       </div>
       <div className='calendar'>
-      <Calendar />
+        <Diary />
       </div>
     </div>
   )
