@@ -1,6 +1,7 @@
 import React from 'react'
 import './Hero.css'
 import notionLogo from '../../assets/Notion_app_logo.png'
+import githubLogo from '../../assets/github-logo.png'
 import { useNavigate } from 'react-router-dom'
 
 const Hero = ({heroData}) => {
@@ -21,9 +22,12 @@ const Hero = ({heroData}) => {
         <div className='hero-button' onClick={moveToReservation}>
           <p>진료 예약</p>
         </div>
-        <div>
+        <div className='logo'>
           <a href="https://www.notion.so" target="_blank" rel="noopener noreferrer">
             <img src={notionLogo} alt="Notion Logo" className='notion-logo'/>
+          </a>
+          <a href="https://github.com/hanium-team-ADAS" target="_blank" rel="noopener noreferrer">
+            <img src={githubLogo} alt="Github Logo" className='github-logo'/>
           </a>
         </div>
     </div>

@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "Choi",
+      "major": "0"
+    },
+    {
+      "id": 2,
+      "name": "Jang",
+      "major": "0"
+    },
+    {
+        "id": 3,
+        "name": "Kim",
+        "major": "0"
+      },
+      {
+        "id": 4,
+        "name": "Lee",
+        "major": "0"
+      },
+      {
+        "id": 5,
+        "name": "Park",
+        "major": "0"
+      }
+  ]
