@@ -1,0 +1,63 @@
+.diary-container {
+    text-align: center;
+    width: 40vw;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+  .diary-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .diary-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .diary-header p {
+    font-size: 1.5rem;
+  }
+  
+  .react-calendar {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    width: 100%;
+  }
+  
+  .react-calendar__tile--active {
+    background: #006edc !important;
+    color: white !important;
+  }
+  
+  .react-calendar__tile--now {
+    background: #00c5ff !important;
+    color: white !important;
+  }
+
+  .saturday {
+    color: blue !important;
+  }
+
+  .event-details {
+    background: white;
+    color: black;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .event-details p {
+    font-size: 20px;
+  }
+  

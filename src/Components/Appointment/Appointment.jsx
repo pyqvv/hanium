@@ -13,21 +13,23 @@ const Appointment = () => {
     const dd = String(today.getDate()).padStart(2, '0');
     const todayStr = `${yyyy}-${mm}-${dd}`;
 
-    // 다음 달의 마지막 날짜 계산
-    const nextMonth = new Date(today.getFullYear(), today.getMonth() + 2, 0); // 다음 달의 0번째 날은 이번 달의 마지막 날을 의미
-    const nextMonthYyyy = nextMonth.getFullYear();
-    const nextMonthMm = String(nextMonth.getMonth() + 1).padStart(2, '0');
-    const nextMonthDd = String(nextMonth.getDate()).padStart(2, '0');
-    const maxDateStr = `${nextMonthYyyy}-${nextMonthMm}-${nextMonthDd}`;
+    // 4주(28일) 후 날짜 계산
+    const fourWeeksLater = new Date(today);
+    fourWeeksLater.setDate(today.getDate() + 28);
+
+    const fourWeeksYyyy = fourWeeksLater.getFullYear();
+    const fourWeeksMm = String(fourWeeksLater.getMonth() + 1).padStart(2, '0');
+    const fourWeeksDd = String(fourWeeksLater.getDate()).padStart(2, '0');
+    const fourWeeksStr = `${fourWeeksYyyy}-${fourWeeksMm}-${fourWeeksDd}`;
 
     setMinDate(todayStr);
-    setMaxDate(maxDateStr);
+    setMaxDate(fourWeeksStr);
   }, []);
 
   return (
     <div className='appt-container'>
-      <div className='inputs'>
-        <div className="input">
+      <div className='appt-inputs'>
+        <div className="appt-input">
           <form>
             <select>
               <option>김교수</option>
@@ -35,16 +37,19 @@ const Appointment = () => {
             </select>
           </form>
         </div>
-        <div className="input">
+        <div className="appt-input">
           <input type='date' min={minDate} max={maxDate}></input>
         </div>
-        <div>
-            <input type='time'/>
+        <div className="appt-input">
+            <input id='appt-time' type='time' name='appt-time' />
         </div>
       </div>
-      <div className='buttons'>
-        <div className='submit'>예약</div>
-        <div className="reset">취소</div>
+      <div className='appt-textarea'>
+        <textarea value={'증상을 작성해주세요.'} />
+      </div>
+      <div className='appt-buttons'>
+        <div className='appt-submit'>예약</div>
+        <div className="appt-reset">취소</div>
       </div>
     </div>
   )
