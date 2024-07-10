@@ -21,12 +21,15 @@ function App() {
             <Hero heroData={heroData}/>
             <DoctorImg />
           </div></div>} />
-        <Route path="/reservation"  element={<div><Navbar/><Reservation/></div>} />
+        <Route path="/reservation"  element={<div className='res-container'>
+          <Navbar/>
+          <div className='reservation'>
+            <Reservation />
+          </div></div>} />
         <Route path="/treatment"  element={<div><Navbar/><Treatment/></div>} />
         <Route path="/login"      element={<div><Navbar/><Login/></div>} />
         <Route path="/doctorSignUp"   element={<div><Navbar/><DoctorSignUp/></div>} />
         <Route path="/patientSignUp"  element={<div><Navbar/><PatientSignUp/></div>} />
-        <Route path="/backToLogin"    element={<div><Navbar/><Login/></div>} />
       </Routes>
     </Router>
   );

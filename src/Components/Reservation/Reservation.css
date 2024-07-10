@@ -1,0 +1,21 @@
+/* Reservation.css */
+
+.reservation-container {
+  display: flex;
+  justify-content: space-between; /* 왼쪽과 오른쪽으로 요소 배치 */
+  padding: 20px; /* 여백 설정 */
+  margin: 4rem;
+}
+
+.res {
+  flex: 1; /* 왼쪽 반을 차지하도록 설정 */
+  padding-right: 10px; /* 오른쪽 여백 */
+  width: 50%;
+}
+
+.calendar {
+  flex: 1; /* 오른쪽 반을 차지하도록 설정 */
+  padding-left: 10px; /* 왼쪽 여백 */
+  width: 50%;
+  text-align: center;
+}
